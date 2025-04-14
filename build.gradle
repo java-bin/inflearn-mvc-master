@@ -18,7 +18,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web' // servlet
+    implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0' // jsp
+    implementation 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.0' // jsp
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:10.1.8' // jsp
+    compileOnly 'org.projectlombok:lombok' // mvc controller
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor' // mvc controller
+    annotationProcessor 'org.projectlombok:lombok' // mvc controller
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
