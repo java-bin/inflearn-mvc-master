@@ -1,0 +1,15 @@
+### Send POST request with json body
+POST http://localhost:8080/restTest
+Content-Type: application/json
+
+{
+  "name": "spring-rest",
+  "age": 10
+}
+
+### Send POST request with text body
+POST http://localhost:8080/restTest
+Content-Type: text/plain
+
+name=spring-rest,
+age=10
