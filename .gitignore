@@ -173,8 +173,13 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
-# Add
+# Gradle 캐시 무시
+.gradle/
+gradle/**/executionHistory.bin
+gradle/**/fileHashes/
+gradle/**/outputFiles.bin
+gradle/**/journal-*.bin
+gradle/**/buildOutputCleanup/
+gradle/**/vcsMetadata/
 *.lock
-*.bin
-*.probe
 # End of https://www.toptal.com/developers/gitignore/api/macos,intellij,java
